@@ -1,0 +1,13 @@
+<mxfile host="Electron" modified="2023-09-27T08:28:34.630Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="ZNnL_0ibplPsK-oVOwG8" version="21.6.8" type="device">
+  <diagram name="Page-1" id="HG7tylxh6wvFQT_IU2wk">
+    <mxGraphModel dx="983" dy="849" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZvqMuJ6lbHqnTdUXjRC8-2" value="Ajout demande" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=60;" parent="1" vertex="1">
+          <mxGeometry x="175" y="20" width="490" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
