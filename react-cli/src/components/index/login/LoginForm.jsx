@@ -23,7 +23,7 @@ function LoginForm() {
             </div>
             <p className="help is-success"></p>
           </div>
-          <input type="submit" value="Login" className="button is-link" />
+          <input type="submit" value="Login" className=" button is-link" />
         </form>
       </main>
     </>

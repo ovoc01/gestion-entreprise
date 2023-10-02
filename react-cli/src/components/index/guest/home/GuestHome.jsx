@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import './guesthome.css'
 import PostContainer from "./postContainer/PostContainer";
+
 function GuestHome(){
     const navigate = useNavigate();
     return (
@@ -15,6 +16,7 @@ function GuestHome(){
               the job that's right for you.
             </h2>
           </div>
+          
           <PostContainer/>
         </main>
       </>

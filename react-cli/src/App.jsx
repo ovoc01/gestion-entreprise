@@ -14,7 +14,7 @@ import Postulation from "./components/index/guest/home/postContainer/postulation
 import LoginForm from "./components/index/login/LoginForm";
 import Error404 from "./components/error/Error404";
 import DepartementHome from "./components/index/departement/DepartementHome";
-import BesoinPersonnel from "./components/index/departement/besoinPersonnel/BesoinPersonnel";
+import CreateAnnonce from "./components/index/departement/createAnnonce/CreateAnnonce"
 
 function App() {
     const navigate = useNavigate();
@@ -47,12 +47,13 @@ function App() {
                 <Route path=":id" ></Route>
             </Route>
         </Route>
+
         <Route path="/login" element={<LoginForm />}></Route>
         <Route path="/departement/*" element={<DepartementHome />}>
-              <Route index element={<BesoinPersonnel />}></Route>
-              <Route path="embauche" element= {<BesoinPersonnel/>}>
-              </Route>
+              <Route index element={<CreateAnnonce />}></Route>
+              
         </Route>
+        
         <Route path="*" element={<Error404 />}></Route>
       </Routes>
   );
