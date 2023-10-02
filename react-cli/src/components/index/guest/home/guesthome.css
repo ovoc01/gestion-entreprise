@@ -1,0 +1,26 @@
+.announce{
+    width: 50%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-direction: column;
+}
+.announce h1{
+    font-size: 40px;
+}
+
+.announce span{
+    color: #5088F7;
+}
+.guest-home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+

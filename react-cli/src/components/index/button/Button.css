@@ -1,0 +1,20 @@
+.my-button{
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+}
+
+.my-button:hover{
+    color: #3e8e41;
+    background-color: white;
+    border: 1px solid #3e8e41;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}

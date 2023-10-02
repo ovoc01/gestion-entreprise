@@ -1,0 +1,9 @@
+.postContainer {
+    margin-top: 100px;
+    width: 70%;
+    height: 80%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
