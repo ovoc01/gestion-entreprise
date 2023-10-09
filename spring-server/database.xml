@@ -1,0 +1,10 @@
+<database>
+    <connection>
+        <server>postgres</server>
+        <host>localhost</host>
+        <port>5432</port>
+        <user>postgres</user>
+        <password>pixel</password>
+        <dbname>gestion_entreprise</dbname>
+    </connection>
+</database>

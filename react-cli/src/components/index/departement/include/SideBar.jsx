@@ -1,8 +1,6 @@
 import "./sidebar.css";
-import { Link, Outlet, Route, Routes, useNavigate } from "react-router-dom";
-import Navlist from "./navlist/Navlist";
-import BesoinPersonnel from "../besoinPersonnel/BesoinPersonnel";
-import { FaBars } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import EmbaucheButton from "../embaucheButton/EmbaucheButton";
 function SideBar() {
   const navigate = useNavigate();
@@ -11,12 +9,13 @@ function SideBar() {
     <>
       <nav className="departement-sidebar">
         <span className="logo">Services</span>
-        <ul>
           <EmbaucheButton />
+        <ul>
+          <li><Link to="annonces"> Listes annonces</Link></li>
+          
         </ul>
-      </nav>
 
-      <Outlet />
+      </nav>
     </>
   );
 }

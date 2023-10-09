@@ -7,20 +7,22 @@ function PostFilter() {
       <h1 className="title">Filter</h1>
       <div className="field">
         <div className="control">
-          <input className="input is-dark" type="number" placeholder="" />
+          <input className="input is-dark" type="number" min={0} placeholder="" />
         </div>
         <p className="help is-success"></p>
       </div>
       <div className="field">
         <div className="control">
-          <input className="input is-dark" type="number" placeholder="" />
+          <input className="input is-dark" type="number" min={0} placeholder="" />
         </div>
         <p className="help is-success"></p>
       </div>
       <div class="select is-rounded is-dark ">
         <select>
           <option>Services</option>
-          <option>With options</option>
+          <option>Commercial</option>
+          <option>Informatique</option>
+          <option>Securité</option>
         </select>
       </div>
       <input type="submit" className="button is-dark" />

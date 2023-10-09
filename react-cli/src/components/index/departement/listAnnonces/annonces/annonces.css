@@ -1,0 +1,26 @@
+.annonce_element{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #ccc;
+    height: 70px;
+    width: 900px;
+    display: flex;
+}
+
+.annonce_element_body{
+    width: 70%;
+}
+
+.annonce_element_body ul{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.link{
+    cursor: pointer;
+}

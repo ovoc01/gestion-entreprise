@@ -1,6 +1,12 @@
-import { BrowserRouter, Routes, Route, useNavigate, Outlet } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  useNavigate,
+  Outlet,
+} from "react-router-dom";
 import SideBar from "./include/SideBar";
-import './departement.css'
+import "./departement.css";
 function DepartementHome() {
   const navigate = useNavigate();
   const about = () => {
@@ -9,8 +15,10 @@ function DepartementHome() {
   return (
     <>
       <main className="departement-home">
-        <SideBar/>
-        
+        <SideBar />
+        <div className="outlet-container">
+          <Outlet />
+        </div>
       </main>
     </>
   );

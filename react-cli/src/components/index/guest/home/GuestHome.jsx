@@ -4,6 +4,9 @@ import PostContainer from "./postContainer/PostContainer";
 
 function GuestHome(){
     const navigate = useNavigate();
+    const home = ()=>{
+      navigate('/')
+    }
     return (
       <>
         <main className="guest-home">
@@ -16,7 +19,7 @@ function GuestHome(){
               the job that's right for you.
             </h2>
           </div>
-          
+          <button className="button" style={{backgroundColor:" #5088F7",color:"white",marginTop:"10px"}} onClick={home}>Retour a l'accueil</button>
           <PostContainer/>
         </main>
       </>

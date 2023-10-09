@@ -4,9 +4,9 @@ import { Link, useNavigate } from "react-router-dom";
 
 function EmbaucheButton() {
   return (
-    <Link to={"embauche"}>
+    <Link to={"create-annonce"}>
       <button className="buttons" type="button">
-        <span className="button__text">Embauchage</span>
+        <span className="button__text">Annonce</span>
         <span className="button__icon">
           <svg
             className="svg"
