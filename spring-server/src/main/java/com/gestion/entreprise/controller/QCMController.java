@@ -11,25 +11,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.framework.core.datasource.connection.DtbConnexion;
-import com.gestion.entreprise.model.rh.contrat.Contrat;
+import com.gestion.entreprise.model.rh.besoin.qcm.TypeQuestion;
 
 @RestController
-@RequestMapping("api")
+@RequestMapping("api/qcm")
 @CrossOrigin(origins = "*")
-public class ContratController {
-    @GetMapping("/contrats")
-    public ResponseEntity<?> getContrats() throws SQLException {
+public class QCMController {
+    @GetMapping("type_questions")
+    public ResponseEntity<?> getTypeQuestion() throws SQLException{
         Connection c = null;
         try {
             c = DtbConnexion.sessionConnection("gestion_entreprise");
-            Contrat[] contrats = new Contrat().select(c);
-            return ResponseEntity.ok(contrats);
+            TypeQuestion[] typeQuestions = new TypeQuestion().select(c);
+            return ResponseEntity.ok(typeQuestions);
         } catch (Exception e) {
-            e.printStackTrace();
-            return new ResponseEntity<>(e.getMessage(), HttpStatus.EXPECTATION_FAILED);
-        } finally {
+                e.printStackTrace();
+                return new ResponseEntity<String>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }finally{
             c.close();
         }
     }
-
 }

@@ -11,6 +11,16 @@ export async function getServices() {
     }
 }
 
+export async function getTypeQuestion() {
+    try {
+        const response = await axios.get('http://localhost:4089/api/qcm/type_questions');
+        return response.data;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+
 export async function getContrats() {
     try {
         const response = await axios.get('http://localhost:4089/api/contrats');

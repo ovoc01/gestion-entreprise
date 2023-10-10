@@ -9,7 +9,7 @@ function ListAnnonces() {
     <div className="listAnnonces">
      {/*  <section className="filtre"></section> */}
       <section className="annonce_container">
-        <h1 className="title">Listes des annonces</h1>
+        <h1 className="title has-text-link">Listes des annonces</h1>
         <Annonces idAnnonce={"ANCS00001"} tag={"is-danger"} />
         <Annonces idAnnonce={"ANCS00002"} tag={"is-success"} />
         <Annonces idAnnonce={"ANCS00003"} tag={"is-info"} />

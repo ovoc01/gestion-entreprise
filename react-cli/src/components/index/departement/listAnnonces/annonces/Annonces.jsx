@@ -2,7 +2,8 @@ import React from "react";
 import "./annonces.css";
 import { Link } from "react-router-dom";
 function Annonces({ idAnnonce,titre, tag, description, deadline }) {
-  const url = `${idAnnonce}/cv`;
+  const cv_url = `${idAnnonce}/cv`;
+  const qcm_url = `${idAnnonce}/questionnaire`;
   return (
     <>
       <div className="card">
@@ -10,10 +11,10 @@ function Annonces({ idAnnonce,titre, tag, description, deadline }) {
           <p className="card-header-title">
             Développeur React
             <span className="tag-container">
-              <Link to={url} className="link" title="cliquer pour ajouter le CV">
+              <Link to={cv_url} className="link" title="cliquer pour ajouter le CV">
                 <span className={"tag is-light " + tag}>CV</span>{" "}
               </Link>
-              <Link className="link" title="cliquer pour ajouter le questionnaire">
+              <Link to={qcm_url} className="link" title="cliquer pour ajouter le questionnaire">
                 <span className={"tag is-light " + tag}>Questionnaire</span>{" "}
               </Link>
             </span>

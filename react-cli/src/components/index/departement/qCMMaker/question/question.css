@@ -1,0 +1,23 @@
+.question{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.select-field{
+    width: 420px;
+}
+
+
+.button-container{
+    display: flex;
+    justify-content: space-around;
+    width: fit-content;
+    gap: 10px;
+}
+
+.add-button{
+    width: 330px;
+}
+

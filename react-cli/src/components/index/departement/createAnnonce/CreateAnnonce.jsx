@@ -69,7 +69,9 @@ function CreateAnnonce() {
         }
       }
       else{
-        toast.error("Veuillez compléter les champs")
+        toast.error("Veuillez compléter les champs",{
+          position:'top-right'
+        })
       }
     } catch (error) {
       console.error('Error:', error);

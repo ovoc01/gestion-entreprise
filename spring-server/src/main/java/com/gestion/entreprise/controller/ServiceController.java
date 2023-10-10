@@ -12,7 +12,7 @@ import com.gestion.entreprise.model.rh.Service;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 public class ServiceController {
 
     @GetMapping("/services")

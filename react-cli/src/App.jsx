@@ -18,6 +18,7 @@ import DepartementHome from "./components/index/departement/DepartementHome";
 import CreateAnnonce from "./components/index/departement/createAnnonce/CreateAnnonce"
 import ListAnnonces from "./components/index/departement/listAnnonces/ListAnnonces";
 import CVMaker from "./components/index/departement/cVMaker/CVMaker";
+import QCMMaker from "./components/index/departement/qCMMaker/QCMMaker";
 
 function App() {
    
@@ -64,7 +65,7 @@ function App() {
               <Route path="annonces/*" >
                 <Route index={true} element={<ListAnnonces />}></Route>
                 <Route path=":idAnnonce/cv" element={<CVMaker/>}></Route>
-                <Route path=":idAnnonce/questionnaire" element={<>This is the Questionnaire</>}></Route>
+                <Route path=":idAnnonce/questionnaire" element={<QCMMaker/>}></Route>
               </Route>
         </Route>
         
